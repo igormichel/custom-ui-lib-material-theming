@@ -1,0 +1,28 @@
+@import '~@angular/material/theming';
+
+@import 'projects/ui-lib-demo/src/material-palette.scss';
+
+@import '~@imichel/ui-lib/theming';
+
+// Define your application's custom theme.
+$primary: mat-palette($mat-teal);
+$accent:  mat-palette($mat-teal, A200, A100, A400);
+$theme: mat-light-theme($primary, $accent);
+
+// Define the application's custom typographie
+$custom-typography: mat-typography-config(
+    $font-family: 'Roboto, monospace'
+);
+
+// Angular metarial, pass custom theme
+@include angular-material-theme($theme);
+
+// Angular material, pass custom typography
+@include mat-core($custom-typography);
+//@include mat-core();
+
+
+// Custom ui lib, pass custom theme
+@include ui-lib-theme($theme);
+// Custom ui lib, pass custom typography
+@include ui-lib-typography($custom-typography);

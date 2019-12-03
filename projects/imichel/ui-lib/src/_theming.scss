@@ -1,0 +1,16 @@
+@import '~@angular/material/theming';
+@import './ui-sample/_ui-sample.theme.scss';
+@import './cdk-sample/_cdk-sample.theme.scss';
+
+
+@mixin ui-lib-theme($theme) {
+    //Pass theme to individual components
+    @include ui-sample-theme($theme);
+    @include cdk-sample-theme($theme);
+}
+
+@mixin ui-lib-typography($custom-typography) {
+//pass typography to individual components
+    @include ui-sample-typography($custom-typography);
+    @include cdk-sample-typography($custom-typography);
+}

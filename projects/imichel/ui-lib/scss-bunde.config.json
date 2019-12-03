@@ -1,0 +1,5 @@
+{
+    "entry": "./projects/imichel/ui-lib/src/_theming.scss",
+    "dest": "./dist/imichel/ui-lib/theming.scss",
+    "includePaths": ["projects/imichel/ui-lib/src/lib"]
+}

@@ -1,0 +1,38 @@
+<mat-sidenav-container fxLayout="column" fxFill>
+  <mat-sidenav #sidenav position="end" style="width:50%">
+    <a (click)="sidenav.toggle()" mat-button>Close</a>
+    <mat-menu #menu="matMenu"></mat-menu>
+    <button [routerLink]="['']" (click)="sidenav.toggle()" mat-menu-item>
+      Material and Custom
+    </button>
+    <button [routerLink]="['cdk']" (click)="sidenav.toggle()" mat-menu-item>
+      Meterial CDK
+    </button>
+  </mat-sidenav>
+
+  <mat-sidenav-content fxLayout="column" fxFill fxAlign>
+    <mat-toolbar color="primary" fxFlexAlign="start">
+      <mat-toolbar-row fxLayout="row">
+        <span>{{ title }}</span>
+        <div fxShow="true" fxHide.lt-md="true">
+          <a [routerLink]="['']" mat-button>Material and Custom</a>
+          <a [routerLink]="['cdk']" mat-button>Meterial CDK</a>
+        </div>
+        <button fxFlexOffset="auto" fxHide="true" fxShow.lt-md="true" mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <div id="router-outlet-wrapper" fxLayout="column" fxFlexAlign="space-around" fxLayoutAlign="center center"
+      fxFlex="1 0 auto">
+      <router-outlet></router-outlet>
+    </div>
+
+    <mat-toolbar color="primary" fxLayout="row" fxFlexAlign="end">
+      <mat-toolbar-row>
+        <a [routerLink]="" mat-button>Footer1</a>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>

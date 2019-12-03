@@ -1,0 +1,23 @@
+<div [formGroup]="formGroup" class="cdk-sample-input-container">
+    <input  class="cdk-sample-input-element" 
+            formControlName="businessProcesCoreId" 
+            size="3"
+            aria-label="Core business process id" 
+            (input)="_handleInput()">
+    <span class="cdk-sample-input-spacer">
+            &#58;
+    </span>
+    <input  class="cdk-sample-input-element" 
+            formControlName="version" 
+            size="3" 
+            aria-label="version"
+            (input)="_handleInput()">
+    <span class="cdk-sample-input-spacer">
+            &#58;
+    </span>
+    <input  class="cdk-sample-input-element" 
+            formControlName="processSpecification" 
+            size="4"
+            aria-label="process specification" 
+            (input)="_handleInput()">
+</div>

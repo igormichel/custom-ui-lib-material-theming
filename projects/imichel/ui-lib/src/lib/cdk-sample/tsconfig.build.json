@@ -1,0 +1,15 @@
+{
+    "extends": "../../../tsconfig.lib.json",
+    "files": [
+      "public-api.ts",
+      "../typings.d.ts"
+    ],
+    "angularCompilerOptions": {
+      "annotateForClosureCompiler": true,
+      "strictMetadataEmit": true,
+      "flatModuleOutFile": "index.js",
+      "flatModuleId": "@imichel/ui-lib/cdk-sample",
+      "skipTemplateCodegen": true,
+      "fullTemplateTypeCheck": true
+    }
+  }
