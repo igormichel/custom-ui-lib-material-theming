@@ -6,12 +6,12 @@
 
 // Define your application's custom theme.
 $primary: mat-palette($mat-teal);
-$accent:  mat-palette($mat-teal, A200, A100, A400);
+$accent: mat-palette($mat-teal, A200, A100, A400);
 $theme: mat-light-theme($primary, $accent);
 
 // Define the application's custom typographie
 $custom-typography: mat-typography-config(
-    $font-family: 'Roboto, monospace'
+    $font-family: 'Roboto, monospace',
 );
 
 // Angular metarial, pass custom theme
@@ -20,7 +20,6 @@ $custom-typography: mat-typography-config(
 // Angular material, pass custom typography
 @include mat-core($custom-typography);
 //@include mat-core();
-
 
 // Custom ui lib, pass custom theme
 @include ui-lib-theme($theme);

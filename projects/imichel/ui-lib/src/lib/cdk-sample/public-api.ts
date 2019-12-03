@@ -1,1 +1,1 @@
-export * from './cdk-sample.module';
+export * from './cdk-sample.module'

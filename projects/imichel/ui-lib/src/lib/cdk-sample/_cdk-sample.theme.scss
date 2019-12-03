@@ -1,17 +1,16 @@
 @mixin cdk-sample-theme($theme) {
-
     $primary: map-get($theme, primary);
     $accent: map-get($theme, accent);
 
     .card {
         background-color: mat-color($primary, A700);
-      }
+    }
 }
 
 @mixin cdk-sample-typography($config) {
     .ui-sample {
-      font: {
-        family: mat-font-family($config, caption);
-      }
+        font: {
+            family: mat-font-family($config, caption);
+        }
     }
 }

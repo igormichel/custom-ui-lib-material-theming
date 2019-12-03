@@ -1,5 +1,4 @@
 @mixin ui-sample-theme($theme) {
-
     $primary: map-get($theme, primary);
     $accent: map-get($theme, accent);
 
@@ -18,7 +17,7 @@
         align-items: center;
         transition: all 0.2s ease-in-out;
         line-height: 24px;
-      }
+    }
 
     .card.highlight-card {
         background-color: mat-color($primary, A700);
@@ -28,13 +27,13 @@
         width: auto;
         min-width: 30%;
         position: relative;
-      }
+    }
 }
 
 @mixin ui-sample-typography($config) {
     .ui-sample {
-      font: {
-        family: mat-font-family($config);
-      }
+        font: {
+            family: mat-font-family($config);
+        }
     }
 }
